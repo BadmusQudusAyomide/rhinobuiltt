@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rhino Built Support Chat</title>
+    <link rel="stylesheet" href="chatbot.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="icon" type="image/png" href="favicon.png">
+</head>
+<body>
+    <div class="chat-container">
+        <!-- Chat Header -->
+        <div class="chat-header">
+            <div class="branding">
+                <img src="rhino.png" alt="Rhino Logo" class="chat-logo">
+                <div class="status-container">
+                    <h2>Rhino Support</h2>
+                    <div class="status-indicator">
+                        <span class="status-dot"></span>
+                        <span class="status-text">Online</span>
+                    </div>
+                </div>
+            </div>
+            <button class="close-chat">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+
+        <!-- Chat Messages -->
+        <div class="chat-messages">
+            <!-- Bot Initial Message -->
+            <div class="message bot">
+                <div class="message-content">
+                    <p>Welcome to Rhino Built Support! 🦏 How can we help you today?</p>
+                    <div class="quick-replies">
+                        <button class="quick-btn">Website Issues</button>
+                        <button class="quick-btn">Pricing Inquiry</button>
+                        <button class="quick-btn">Technical Support</button>
+                    </div>
+                </div>
+                <span class="timestamp">10:02 AM</span>
+            </div>
+
+            <!-- User Message Example -->
+            <div class="message user">
+                <div class="message-content">
+                    <p>I need help with my website's loading speed</p>
+                    <div class="message-status">
+                        <i class="fas fa-check-double"></i>
+                    </div>
+                </div>
+                <span class="timestamp">10:03 AM</span>
+            </div>
+
+            <!-- Typing Indicator -->
+            <div class="typing-indicator">
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+            </div>
+        </div>
+
+        <!-- Chat Input Area -->
+        <div class="chat-input">
+            <div class="input-group">
+                <button class="attach-btn">
+                    <i class="fas fa-paperclip"></i>
+                    <input type="file" hidden>
+                </button>
+                <input type="text" placeholder="Type your message..." class="message-input">
+                <button class="send-btn">
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="chatbot.js"></script>
+</body>
+</html>

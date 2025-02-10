@@ -1,0 +1,39 @@
+/* Team Section - Verified */
+.team {
+    padding: 8rem 5%;
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
+                url('../images/texture-bg.jpg') center/cover; /* Correct path */
+    position: relative;
+    overflow: hidden;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 3rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+/* Animation Sync with Main Site */
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+}
+
+/* Mobile Responsiveness Verified */
+@media (max-width: 768px) {
+    .team {
+        padding: 4rem 5%;
+    }
+    
+    .team-member {
+        margin: 0 0.5rem;
+    }
+    
+    .member-image {
+        width: 180px;
+        height: 180px;
+    }
+}
