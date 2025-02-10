@@ -6,8 +6,6 @@
     --transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
     --gradient: linear-gradient(135deg, rgba(255,0,0,0.15) 0%, rgba(0,0,0,0) 50%);
 }
-
-/* Base Styles */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -1244,3 +1242,4 @@ input:checked + .slider:before {
         padding: 2rem;
     }
 }
+/* noooooooooooooooo */
